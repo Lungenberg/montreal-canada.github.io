@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada's National Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title-block">
+                <h1 class="title">Montreal International Jazz Festival</h1>
+            </div>
+            <div class="userpic"></div>
+        </div>
+        <div class="navigate">
+            <ul>
+                <li><a href="#">Main Info</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Page</a></li>
+            </ul>
+        </div>
+        <div class="content-wrapper">
+            <div class="content">
+                <h3>🎶 Experience the Rhythm of a Lifetime at the Montreal International Jazz Festival! 🎷🎵</h3>
+                <p>Get ready for an unforgettable musical journey in the heart of Canada as the Montreal International Jazz Festival returns to captivate your senses! Join us for a celebration of world-class talent, diverse rhythms, and the magic of jazz that brings people together!</p>
+                <h3 class="highlights">🌟 Key Highlights:</h3>
+                <ul>
+                    <li class="list1-1">🎺 Global Jazz Icons: Enjoy the atmosphere thanks to the most famous jazz performers from all over the world. Each performance will give you a great experience and promises to be unforgettable!.</li>
+                    <li class="list1-2">🌆 Downtown Montreal Vibes: Feel the incredible rhythm on every street in the city as the festival makes it the center of incredible music, moving from one performance to the next.</li>
+                    <li class="list1-3">🎉 Street Performances: Discover the unexpected - as the festival will feature incredible street performances, parades, and live interaction with musicians.</li>
+                    <li class="list1-4">🌌 Nightly Spectacles: As the sun sets, the festival comes alive with mesmerizing light shows, creating an incredible atmosphere for evening performances under the stars.</li>
+                </ul>
+                <h3 class="join-info">How to Join the Carnival:</h3>
+                <ul>
+                    <li class="list2-1"><b class="keywords">1. Book Your Tickets:</b> Secure your spot for this once-in-a-lifetime experience by booking your tickets online.</li>
+                    <li class="list2-2"><b class="keywords">2. Accommodation:</b> Explore our recommended accommodation options for a comfortable stay during the carnival.</li>
+                    <li class="list2-3"><b class="keywords">3. Transportation:</b> Plan your journey with convenient transportation options to and from the event venue.</li>
+                </ul>
+                <h3 class="glory-canada">🍁 Experience Canada in all its Glory! 🍁</h3>
+
+            </div>
+            <div class="sidebar">
+                <ul class="sidebar-images">
+                    <li>
+                        <img class="image1" src="images/scene.jpg" alt="">
+                    </li>
+                    <li>
+                        <img class="image2" src="images/festival2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img class="image3" src="images/festival3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img class="image4" src="images/festival4.jpg" alt="">
+                    </li>
+                </ul>
+                </div>
+                <div class="pop-up">
+                    <span>&times;</span>
+                    <img class="image-pop-up1" src="images/scene.jpg" alt="">
+            </div>
+        </div>
+        <footer>
+            Follow us on social media for updates and behind-the-scenes info:
+        </footer>
+    </div>
+    <script>
+        document.querySelectorAll('.sidebar-images img').forEach(image1 =>{
+            image1.onclick = () => {
+                document.querySelector('.pop-up').style.display = 'block';
+                document.querySelector('.image-pop-up1 img').src = image1.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.pop-up span').onclick = () => {
+            document.querySelector('.pop-up').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
